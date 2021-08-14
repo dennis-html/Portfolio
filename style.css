@@ -72,7 +72,7 @@ margin-left: auto;
 .about-content{
     background-color: black;
     color: white;
-    padding-block: 50px;
+    padding-block: 120px;
     padding-inline: 170px;
 }
 .about-content h1{
@@ -189,11 +189,7 @@ margin-left: auto;
     .main-content p{
         min-width: 100%;
     }
-    .circular-image{
-      margin-left: -45px;
-       margin-bottom: 60px;
-    }
-
+ 
     .about-content{
         padding: 15px;
         padding-top: 55px;
