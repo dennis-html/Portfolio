@@ -72,7 +72,7 @@ margin-left: auto;
 .about-content{
     background-color: black;
     color: white;
-    padding-block: 120px;
+    padding-block: 50px;
     padding-inline: 170px;
 }
 .about-content h1{
@@ -191,8 +191,7 @@ margin-left: auto;
     }
  
     .about-content{
-        padding: 15px;
-        padding-top: 55px;
+        padding: 115px;
     }
 
     .about-text{
@@ -218,11 +217,7 @@ margin-left: auto;
         max-width: 100%;
         overflow-x: hidden;
     }
-    .circular-image{
-        margin-left: -45px;
-        width: 200px;
-        height: 190px;
-    }
+
     .about-content{
         padding: 15px;
         padding-top: 25px;
@@ -237,12 +232,7 @@ margin-left: auto;
         overflow-x: hidden;
     }
     
-    .circular-image{
-        margin-left: -15px;
-        width: 250px;
-        height: 250px;
-        margin-top: -30px;
-        }
+
     .about-content{
         padding: 20px;
     }
