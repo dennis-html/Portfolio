@@ -17,11 +17,10 @@ html{
     position: relative;
     bottom: 15px;
 }
-.main{
+.main-showcase{
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(65, 65, 65, 0.5)) ,url("img/showcase.jpeg");
     background-size: cover;
     background-position: center;
-
 }
 .navbar-nav{
 margin-left: auto;
@@ -78,8 +77,6 @@ margin-left: auto;
 
 .about-heading{
     color: #FFFF00;
-    font-weight: bold;
-    text-align: center;
 }
 
 .about-content p{
@@ -99,15 +96,28 @@ margin-left: auto;
     border-radius: 0;
 }
 
+/* Skills Section */
+
+.main-skills{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(65, 65, 65, 0.5)) ,url("img/landscape.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.skills-heading{
+    color: #FFFF00;
+}
+
+
+
 /* Progetti Section */
 .progetti-section{
     background-color: #326733;
     padding-block: 20px;
     padding-bottom: 65px;
 }
+
 .progetti-heading{
     color: #FFFF00;
-    font-weight: bold;
 }
 .slider-row{
     background-color: #ffffff;
