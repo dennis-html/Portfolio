@@ -75,11 +75,13 @@ margin-left: auto;
     padding-block: 50px;
     padding-inline: 170px;
 }
-.about-content h1{
+
+.about-heading{
     color: #FFFF00;
     font-weight: bold;
     text-align: center;
 }
+
 .about-content p{
     padding-block: 20px;
 }
