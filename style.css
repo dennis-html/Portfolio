@@ -200,23 +200,7 @@ margin-left: auto;
     width: 50px;
 }
 
-/* Footer */
-.footer{
-    background-color: black;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    color: white;
-}
-.footer-headings{
-    font-weight: bold;
-}
-.mail-tel{
-    text-decoration: none;
-    color: white;
-}
-.footer-heading-side-border{
-    border-left: 2px solid #FFFF00;
-}
+
 
 /* Responsiveness */
 @media (max-width: 767px) {
@@ -249,9 +233,7 @@ margin-left: auto;
     .contatti-text{
         font-size: 50px
     }
-    .about-me-footer, .recent-projects-footer, .project-image-footer{
-        margin-top: 20px;
-    }
+    
 
 }
 
