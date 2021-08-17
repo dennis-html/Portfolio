@@ -112,6 +112,16 @@ margin-left: auto;
     padding-bottom: 370px;
 }
 
+.skills-icon{
+   width:100px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.card{
+    background: linear-gradient(rgba(9, 231, 231, 0.11),rgb(255, 255, 255));
+}
 
 
 /* Progetti Section */
