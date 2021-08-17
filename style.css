@@ -133,18 +133,6 @@ margin-left: auto;
 }
 
 
-.skills-logo{
-    list-style-type: none;
-    /*Mettere i loghi in orizzontale */
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    /*Dare un margine superiore ai loghi per separarle dalle cards */
-    margin-top: 90px;
-    /*Far diventare i loghi grigi */
-    filter: grayscale(100%);
-}
-
 
 
 /* Progetti Section */
