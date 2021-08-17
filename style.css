@@ -99,7 +99,7 @@ margin-left: auto;
 /* Skills Section */
 
 .main-skills{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(65, 65, 65, 0.5)) ,url("img/landscape.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(255, 255, 255, 0.5)) ,url("img/landscape.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -109,19 +109,42 @@ margin-left: auto;
 
 .skills-section{
     padding-block: 20px;
-    padding-bottom: 370px;
+    padding-bottom: 70px;
 }
 
 .skills-icon{
-   width:100px;
+   width:80px;
+   /* Dare uno spazio (margin) superiore (top) alle icone delle cards */
+   margin-top: 25px;
+   /* Centrare le icone delle cards */
    display: block;
    margin-left: auto;
    margin-right: auto;
 }
 
 .card{
-    background: linear-gradient(rgba(9, 231, 231, 0.11),rgb(255, 255, 255));
+    /*Cambiare il colore di background delle cards */
+    background: linear-gradient(rgba(196, 255, 255, 0.74),rgb(255, 255, 255));
 }
+
+.card-text{
+    font-style: italic;
+    font-size: 15px;
+}
+
+
+.skills-logo{
+    list-style-type: none;
+    /*Mettere i loghi in orizzontale */
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    /*Dare un margine superiore ai loghi per separarle dalle cards */
+    margin-top: 90px;
+    /*Far diventare i loghi grigi */
+    filter: grayscale(100%);
+}
+
 
 
 /* Progetti Section */
