@@ -29,6 +29,7 @@ margin-left: auto;
 .nav-link{
     color: white;
     font-size: 18px;
+    margin: 5px;
 }
 
 .nav-link:hover{
@@ -124,12 +125,14 @@ margin-left: auto;
 
 .card{
     /*Cambiare il colore di background delle cards */
-    background: linear-gradient(rgba(196, 255, 255, 0.74),rgb(255, 255, 255));
+    background: linear-gradient(rgba(255, 255, 255, 0.548),rgb(255, 255, 255));
+    border-radius: 50px;
 }
 
 .card-text{
-    font-style: italic;
-    font-size: 15px;
+    padding-inline: 36px;
+    text-align: center;
+    font-size: 14px;
 }
 
 
