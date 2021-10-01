@@ -34,6 +34,109 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <style>
+        body{margin-top:20px;
+background:#f5f5f5;
+}
+.blog-post {
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+}
+
+.blog-post .blog-img .overlay,
+.blog-post .blog-img .post-meta {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.blog-post .blog-img .overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.blog-post .blog-img .post-meta {
+  bottom: 5%;
+  right: 5%;
+  z-index: 1;
+}
+
+.blog-post .blog-img .post-meta .read-more:hover {
+  color: #6dc77a !important;
+}
+
+.blog-post .content h1, .blog-post .content h2, .blog-post .content h3, .blog-post .content h4, .blog-post .content h5, .blog-post .content h6 {
+  line-height: 1.2;
+}
+
+.blog-post .content .title {
+  font-size: 18px;
+}
+
+.blog-post .content .title:hover {
+  color: #6dc77a !important;
+}
+
+.blog-post .content .author .name:hover {
+  color: #6dc77a !important;
+}
+
+.blog-post:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.blog-post:hover .blog-img .overlay {
+  opacity: 0.65;
+}
+
+.blog-post:hover .blog-img .post-meta {
+  opacity: 1;
+}
+
+.blog-post .post-meta .like i,
+.profile-post .like i {
+  -webkit-text-stroke: 2px #dd2427;
+  -webkit-text-fill-color: transparent;
+}
+
+.blog-post .post-meta .like:active i, .blog-post .post-meta .like:focus i,
+.profile-post .like:active i,
+.profile-post .like:focus i {
+  -webkit-text-stroke: 0px #dd2427;
+  -webkit-text-fill-color: #dd2427;
+}
+
+.avatar.avatar-ex-sm {
+    height: 36px;
+}
+.shadow {
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15) !important;
+}
+
+.text-muted {
+    color: #8492a6 !important;
+}
+
+
+.para-desc {
+    max-width: 600px;
+}
+.text-muted {
+    color: #8492a6 !important;
+}
+
+.section-title .title {
+    letter-spacing: 0.5px;
+    font-size: 30px;
+}
+    </style>
 </head>
 
 <body>
@@ -71,6 +174,137 @@
             
 </body>
 
+
+<!--blog boxes-->
+<div class="container mt-100 mt-60">
+    <div class="row">
+        <div class="col-12 text-center">
+            <div class="section-title mb-4 pb-2">
+                <h4 class="title mb-4" style="margin-top:30px;">My Blog</h4>
+                <p class="text-muted para-desc mx-auto mb-0">Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+            <div class="blog-post rounded border">
+                <div class="blog-img d-block overflow-hidden position-relative">
+                  <a href="blog facebook strategy.html">
+                    <img src="img/blog/Facebook PRINT.jpg" class="img-fluid rounded-top" alt="">
+                  </a>
+                  
+                    <!--overlay immagine-->
+                    <div class="overlay rounded-top bg-dark"></div>
+                    
+                    <div class="post-meta">
+            
+                    </div>
+                </div>
+
+
+                <div class="content p-3">
+                    <small class="text-muted p float-right">12th Sep, 21</small>
+                    <small><a href="javascript:void(0)" class="text-primary">Strategy</a></small>
+                    <h3 class=" fw-bold"><a href="javascript:void(0)" class="text-dark title" style="text-decoration: none;">Quick guide on business with friends.</a></h3>
+                    <p class="text-muted mt-2">Occhiali da sole intelligenti. Si, avete capito bene.
+                        Ray-Ban x Facebook, con data di uscita il 9 Settembre.</p>
+                   
+                    <!--author-->
+                    <div class="pt-3 mt-3 border-top d-flex">
+                        <img src="img/Dennis.jpg" class="img-fluid avatar avatar-ex-sm rounded-pill mr-3 shadow" alt="">
+                        <div class="author mt-2">
+                            <h6 class="mb-0"><a href="javascript:void(0)" class="text-dark name" style="text-decoration: none; margin-left: 10px;">Dennis De Luca</a></h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--end blog post-->
+        </div><!--end col-->
+
+
+<div class="col-lg-4 col-md-6 mt-4 pt-2">
+            <div class="blog-post rounded border">
+                <div class="blog-img d-block overflow-hidden position-relative">
+                  <a href="blog satispay strategy.html">
+                    <img src="img/blog/Satispay STRATEGY.jpg" class="img-fluid rounded-top" alt="">
+                  </a>
+                  
+                    <!--overlay immagine-->
+                    <div class="overlay rounded-top bg-dark"></div>
+                    
+                    <div class="post-meta">
+            
+                    </div>
+                </div>
+
+
+                <div class="content p-3">
+                    <small class="text-muted p float-right">12th Sep, 21</small>
+                    <small><a href="javascript:void(0)" class="text-primary">Strategy</a></small>
+                    <h3 class=" fw-bold"><a href="javascript:void(0)" class="text-dark title" style="text-decoration: none;">Quick guide on business with friends.</a></h3>
+                    <p class="text-muted mt-2">Occhiali da sole intelligenti. Si, avete capito bene.
+                        Ray-Ban x Facebook, con data di uscita il 9 Settembre.</p>
+                   
+                    <!--author-->
+                    <div class="pt-3 mt-3 border-top d-flex">
+                        <img src="img/Dennis.jpg" class="img-fluid avatar avatar-ex-sm rounded-pill mr-3 shadow" alt="">
+                        <div class="author mt-2">
+                            <h6 class="mb-0"><a href="javascript:void(0)" class="text-dark name" style="text-decoration: none; margin-left: 10px;">Dennis De Luca</a></h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--end blog post-->
+        </div><!--end col-->
+
+
+
+ <div class="col-lg-4 col-md-6 mt-4 pt-2">
+            <div class="blog-post rounded border">
+                <div class="blog-img d-block overflow-hidden position-relative">
+                  <a href="blog facebook strategy.html">
+                    <img src="img/blog/TNF Spot - Copia.jpg" class="img-fluid rounded-top" alt="">
+                  </a>
+                  
+                    <!--overlay immagine-->
+                    <div class="overlay rounded-top bg-dark"></div>
+                    
+                    <div class="post-meta">
+            
+                    </div>
+                </div>
+
+
+                <div class="content p-3">
+                    <small class="text-muted p float-right">12th Sep, 21</small>
+                    <small><a href="javascript:void(0)" class="text-primary">Strategy</a></small>
+                    <h3 class=" fw-bold"><a href="javascript:void(0)" class="text-dark title" style="text-decoration: none;">Quick guide on business with friends.</a></h3>
+                    <p class="text-muted mt-2">Occhiali da sole intelligenti. Si, avete capito bene.
+                        Ray-Ban x Facebook, con data di uscita il 9 Settembre.</p>
+                   
+                    <!--author-->
+                    <div class="pt-3 mt-3 border-top d-flex">
+                        <img src="img/Dennis.jpg" class="img-fluid avatar avatar-ex-sm rounded-pill mr-3 shadow" alt="">
+                        <div class="author mt-2">
+                            <h6 class="mb-0"><a href="javascript:void(0)" class="text-dark name" style="text-decoration: none; margin-left: 10px;">Dennis De Luca</a></h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--end blog post-->
+        </div><!--end col-->
+        
+        
+
+        
+    </div><!--end row-->
+</div>
+
+
+
+
+<!---->
 <section>
     <div class="container">
      <h1 class="fw-bold text-warning mt-3 text-center">Work in progress <br>
