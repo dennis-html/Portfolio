@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+.logo{
+    position: relative;
+    bottom: 15px;
+}
+.main-showcase{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(65, 65, 65, 0.5)) ,url("img/showcase.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.navbar-nav{
+margin-left: auto;
+}
+
+.nav-link{
+    color: white;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.nav-link:hover{
+    color: yellow;
+    font-size: 18px;
+}
+.main-content{
+    padding-block: 140px;
+    color: white;
+}
+.heading-2{
+    color: #FFFF00;
+    font-weight: bold;
+}
+.main-content p{
+    max-width: 50%;
+}
+.btn{
+
+    background-color: #FFFF00;
+    color: black;
+    font-weight: bold;
+    padding-inline: 40px;
+    padding-block: 10px;
+
+}
+.btn:hover{
+    background-color: black;
+    color: #FFFF00;
+}
+.fa-bars{
+    color: white;
+}
+.navbar-toggler{
+    box-shadow: none !important;
+}
+/* About section */
+
+
+.about-content{
+    background-color: black;
+    color: white;
+    padding-block: 50px;
+    padding-inline: 360px;
+}
+
+.about-heading{
+    color: #FFFF00;
+}
+
+.about-content p{
+    padding-block: 20px;
+}
+.contact-btn-div{
+    display: flex;
+    justify-content: center;
+}
+.contact-btn{
+    background-color: white;
+    color: black;
+    padding-inline: 40px;
+    padding-block: 10px;
+}
+.about-content a{
+    border-radius: 0;
+}
+
+/* Skills Section */
+
+.main-skills{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(255, 255, 255, 0.5)) ,url("img/landscape.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.skills-heading{
+    color: #FFFF00;
+}
+
+.skills-section{
+    padding-block: 20px;
+    padding-bottom: 70px;
+}
+
+.skills-icon{
+   width:80px;
+   /* Dare uno spazio (margin) superiore (top) alle icone delle cards */
+   margin-top: 25px;
+   /* Centrare le icone delle cards */
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.card{
+    /*Cambiare il colore di background delle cards */
+    background: linear-gradient(rgba(255, 255, 255, 0.548),rgb(255, 255, 255));
+    border-radius: 50px;
+}
+
+.card-text{
+    padding-inline: 36px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+/* Progetti Section */
+.progetti-section{
+    background-color: #326733;
+    padding-block: 20px;
+    padding-bottom: 65px;
+}
+
+.progetti-heading{
+    color: #FFFF00;
+}
+.slider-row{
+    background-color: #ffffff;
+    padding-block: 20px;
+
+}
+.progetti-btn-div{
+    display: flex;
+    justify-content: center;
+}
+.progetti-btn{
+ background-color: #ffffff;
+    color: #276429;
+    border-radius: 0;
+}
+
+/* Contact Section */
+.contatti-div{
+    background-color: black;
+    color: #FFFF00;
+    padding-block: 92px;
+}
+.contatti-div-2{
+    padding-block: 50px;
+}
+.contact-details{
+    list-style-type: none;
+}
+.contact-details li a{
+    color: initial;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 22px;
+}
+.contatti-div-3 h3{
+    writing-mode: vertical-rl;
+    color: black;
+    text-orientation: revert;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contatti-div-3{
+    padding-block: 42.5px;
+    background-color: rgb(217, 255, 1);
+    display: flex;
+    justify-content: space-around;
+}
+.social-links{
+    list-style-type: none;
+}
+.social-links li a img{
+    margin-top: 11px;
+    width: 30px;
+}
+
+
+
+/* Responsiveness */
+@media (max-width: 767px) {
+
+    html{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .main-content p{
+        min-width: 100%;
+    }
+ 
+    .about-content{
+        padding: 115px;
+    }
+
+    .about-heading{
+        font-size: 50px;
+    }
+
+    .skills-heading{
+        font-size: 50px;
+    }
+
+    .progetti-heading{
+        font-size: 50px;
+    }
+
+    .contatti-text{
+        font-size: 50px
+    }
+    
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    html{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .about-content{
+        padding: 15px;
+        padding-top: 25px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    html{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+
+    .about-content{
+        padding: 20px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    html{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
